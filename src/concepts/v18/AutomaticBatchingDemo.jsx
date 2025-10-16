@@ -17,11 +17,17 @@ export default function AutomaticBatchingDemo() {
   };
 
   return (
-    <section style={{ padding: "1rem", border: "1px solid #ff9f1c", borderRadius: "0.75rem" }}>
+    <section
+      style={{
+        padding: "1rem",
+        border: "1px solid #ff9f1c",
+        borderRadius: "0.75rem",
+      }}
+    >
       <h3>Automatic Batching (React 18)</h3>
       <p>
-        Async updates scheduling multiple state changes now batch together automatically, reducing
-        wasted renders and improving paint stability.
+        Async updates scheduling multiple state changes now batch together
+        automatically, reducing wasted renders and improving paint stability.
       </p>
       <button onClick={triggerAsyncWork}>Run async update</button>
       <p>Count: {count}</p>
