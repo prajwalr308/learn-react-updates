@@ -7,11 +7,18 @@ export default function JSXTransformDemo() {
   const [text, setText] = React.useState("");
 
   return (
-    <section style={{ padding: "1rem", border: "1px solid #629460", borderRadius: "0.75rem" }}>
+    <section
+      style={{
+        padding: "1rem",
+        border: "1px solid #629460",
+        borderRadius: "0.75rem",
+      }}
+    >
       <h3>New JSX Transform (React 17)</h3>
       <p>
-        Build tools can compile JSX to <code>jsx</code>/<code>jsxs</code> helper calls, so React does
-        not need to stay in scope. The upgrade removes boilerplate and improves bundle size.
+        Build tools can compile JSX to <code>jsx</code>/<code>jsxs</code> helper
+        calls, so React does not need to stay in scope. The upgrade removes
+        boilerplate and improves bundle size.
       </p>
       <label>
         Type anything:
@@ -21,7 +28,10 @@ export default function JSXTransformDemo() {
           style={{ marginLeft: "0.5rem" }}
         />
       </label>
-      <p>The state updates automatically thanks to the JSX transform’s cleaner runtime helpers.</p>
+      <p>
+        The state updates automatically thanks to the JSX transform’s cleaner
+        runtime helpers.
+      </p>
     </section>
   );
 }
