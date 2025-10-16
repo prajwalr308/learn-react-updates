@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "prism-react-renderer": "^2.3.0",
-    "react": "19.0.0-rc.1",
-    "react-dom": "19.0.0-rc.1"
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
     "@testing-library/react": "file:vendor/testing-library-react",

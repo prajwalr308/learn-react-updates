@@ -24,15 +24,21 @@ export default function EventDelegationDemo() {
   return (
     <section
       ref={containerRef}
-      style={{ padding: "1rem", border: "1px solid #cc7722", borderRadius: "0.75rem" }}
+      style={{
+        padding: "1rem",
+        border: "1px solid #cc7722",
+        borderRadius: "0.75rem",
+      }}
     >
       <h3>Event System Upgrades (React 17)</h3>
       <p>
-        React now delegates events to the root instead of <code>document</code>, so third-party
-        widgets that attach global listeners play nicely with React components.
+        React now delegates events to the root instead of <code>document</code>,
+        so third-party widgets that attach global listeners play nicely with
+        React components.
       </p>
       <button onClick={() => setReactClicks((n) => n + 1)}>
-        Click me (React synthetic events: {reactClicks}, native events: {nativeClicks})
+        Click me (React synthetic events: {reactClicks}, native events:{" "}
+        {nativeClicks})
       </button>
     </section>
   );
